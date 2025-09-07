@@ -1,0 +1,11 @@
+{
+  "_id": "97e92e96-13ce-4c32-9f44-af3c2e385cf6",
+  "avatar": "https://images.unsplash.com/photo-1500000089430?w=800",
+  "email": "test@example.com",
+  "first_name": "Sample first_name for team_member",
+  "hourly_rate": 561.5667293739868,
+  "is_active": true,
+  "last_name": "Sample last_name for team_member",
+  "role": "Business Analyst",
+  "skills": "Python"
+}

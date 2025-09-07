@@ -1,0 +1,11 @@
+{
+  "_id": "0826adc1-a458-4371-a229-00f5d529e9b5",
+  "avatar": "https://images.unsplash.com/photo-1500000150968?w=800",
+  "email": "test@example.com",
+  "first_name": "Sample first_name for team_member",
+  "hourly_rate": 181.81518249065226,
+  "is_active": true,
+  "last_name": "Sample last_name for team_member",
+  "role": "Developer",
+  "skills": "UI/UX"
+}

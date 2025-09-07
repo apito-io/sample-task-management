@@ -1,0 +1,21 @@
+{
+  "_id": "59a999bd-a9b6-4b53-9e62-f441ec01930e",
+  "actual_hours": 663.8848521649132,
+  "assigned_to": "Sample assigned_to for task",
+  "attachments": "https://images.unsplash.com/photo-1500000296170?w=800",
+  "checklist": [
+    {
+      "_id": "Sample _id for array",
+      "assigned_to": "Sample assigned_to for array",
+      "completed": true,
+      "item": "Sample item for array"
+    }
+  ],
+  "description": "This is sample multiline content.",
+  "due_date": "2025-02-16",
+  "estimated_hours": 314.3724347411864,
+  "priority": "High",
+  "status": "Done",
+  "tags": "Testing",
+  "title": "Complete task Guide"
+}

@@ -1,0 +1,33 @@
+{
+  "_id": "706bf387-f9ce-4aff-973c-b53f058d1b65",
+  "actual_hours": 266.6608517602078,
+  "assigned_to": "Sample assigned_to for task",
+  "attachments": "https://images.unsplash.com/photo-1500000872850?w=800",
+  "checklist": [
+    {
+      "_id": "Sample _id for array",
+      "assigned_to": "Sample assigned_to for array",
+      "completed": true,
+      "item": "Sample item for array"
+    },
+    {
+      "_id": "Sample _id for array",
+      "assigned_to": "Sample assigned_to for array",
+      "completed": false,
+      "item": "Sample item for array"
+    },
+    {
+      "_id": "Sample _id for array",
+      "assigned_to": "Sample assigned_to for array",
+      "completed": true,
+      "item": "Sample item for array"
+    }
+  ],
+  "description": "This is sample multiline content.",
+  "due_date": "2024-12-22",
+  "estimated_hours": 86.8790516129921,
+  "priority": "Low",
+  "status": "In Progress",
+  "tags": "Bug",
+  "title": "Amazing task"
+}

@@ -1,0 +1,21 @@
+{
+  "_id": "bac2845c-36d3-45e5-8ebd-53c9fdf67479",
+  "actual_hours": 645.0739893242819,
+  "assigned_to": "Sample assigned_to for task",
+  "attachments": "https://images.unsplash.com/photo-1500000575720?w=800",
+  "checklist": [
+    {
+      "_id": "Sample _id for array",
+      "assigned_to": "Sample assigned_to for array",
+      "completed": false,
+      "item": "Sample item for array"
+    }
+  ],
+  "description": "This is sample multiline content.",
+  "due_date": "2025-05-01",
+  "estimated_hours": 111.9719105858814,
+  "priority": "Critical",
+  "status": "In Progress",
+  "tags": "Bug",
+  "title": "Sample task"
+}

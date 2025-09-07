@@ -1,0 +1,33 @@
+{
+  "_id": "4d23d306-dbe8-461b-a9a7-d7ce2e6a4501",
+  "actual_hours": 480.06558384839275,
+  "assigned_to": "Sample assigned_to for task",
+  "attachments": "https://images.unsplash.com/photo-1500000690063?w=800",
+  "checklist": [
+    {
+      "_id": "Sample _id for array",
+      "assigned_to": "Sample assigned_to for array",
+      "completed": true,
+      "item": "Sample item for array"
+    },
+    {
+      "_id": "Sample _id for array",
+      "assigned_to": "Sample assigned_to for array",
+      "completed": true,
+      "item": "Sample item for array"
+    },
+    {
+      "_id": "Sample _id for array",
+      "assigned_to": "Sample assigned_to for array",
+      "completed": false,
+      "item": "Sample item for array"
+    }
+  ],
+  "description": "This is sample multiline content.",
+  "due_date": "2025-07-01",
+  "estimated_hours": 492.4403868488287,
+  "priority": "Medium",
+  "status": "Blocked",
+  "tags": "Bug",
+  "title": "Complete task Guide"
+}

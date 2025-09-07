@@ -1,0 +1,11 @@
+{
+  "_id": "fe04e8f6-844b-4ae7-91db-2cc53f1d8b06",
+  "avatar": "https://images.unsplash.com/photo-1500000865530?w=800",
+  "email": "sample@demo.org",
+  "first_name": "Sample first_name for team_member",
+  "hourly_rate": 48.16223496195322,
+  "is_active": false,
+  "last_name": "Sample last_name for team_member",
+  "role": "Business Analyst",
+  "skills": "JavaScript"
+}

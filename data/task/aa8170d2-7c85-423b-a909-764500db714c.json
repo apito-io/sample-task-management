@@ -1,0 +1,21 @@
+{
+  "_id": "aa8170d2-7c85-423b-a909-764500db714c",
+  "actual_hours": 916.4164033452704,
+  "assigned_to": "Sample assigned_to for task",
+  "attachments": "https://images.unsplash.com/photo-1500000115677?w=800",
+  "checklist": [
+    {
+      "_id": "Sample _id for array",
+      "assigned_to": "Sample assigned_to for array",
+      "completed": true,
+      "item": "Sample item for array"
+    }
+  ],
+  "description": "This is sample multiline content.",
+  "due_date": "2024-10-15",
+  "estimated_hours": 80.96325586153812,
+  "priority": "High",
+  "status": "Blocked",
+  "tags": "Testing",
+  "title": "Sample task"
+}

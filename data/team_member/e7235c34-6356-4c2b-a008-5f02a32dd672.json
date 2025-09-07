@@ -1,0 +1,11 @@
+{
+  "_id": "e7235c34-6356-4c2b-a008-5f02a32dd672",
+  "avatar": "https://images.unsplash.com/photo-1500000634549?w=800",
+  "email": "user@sample.net",
+  "first_name": "Sample first_name for team_member",
+  "hourly_rate": 384.5468598504126,
+  "is_active": false,
+  "last_name": "Sample last_name for team_member",
+  "role": "Business Analyst",
+  "skills": "Testing"
+}

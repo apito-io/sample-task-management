@@ -1,0 +1,11 @@
+{
+  "_id": "1a89fdab-9234-416b-a779-acf676e1cf50",
+  "avatar": "https://images.unsplash.com/photo-1500000957984?w=800",
+  "email": "sample@demo.org",
+  "first_name": "Sample first_name for team_member",
+  "hourly_rate": 134.59583475964826,
+  "is_active": false,
+  "last_name": "Sample last_name for team_member",
+  "role": "Designer",
+  "skills": "Python"
+}

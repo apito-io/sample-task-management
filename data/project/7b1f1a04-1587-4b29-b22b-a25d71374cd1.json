@@ -1,0 +1,11 @@
+{
+  "_id": "7b1f1a04-1587-4b29-b22b-a25d71374cd1",
+  "budget": 781.1329596733462,
+  "description": "This is sample multiline content.",
+  "due_date": "2025-02-10",
+  "name": "Test project",
+  "priority": "Critical",
+  "progress": 506,
+  "start_date": "2025-02-11",
+  "status": "Planning"
+}

@@ -1,0 +1,69 @@
+# Apito Engine Sample Project Configuration
+# Repository: https://github.com/apito-io/sample-task-management
+
+name: "Task Management System"
+slug: "sample-task-management"
+description: "A comprehensive task management system with projects, assignments, priorities, and team collaboration features"
+project_type: "general" # general | saas
+version: "1.0.0"
+
+# Repository Information
+repository:
+  url: "https://github.com/apito-io/sample-task-management"
+  organization: "apito-io"
+  assets:
+    cover_image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=800"
+    icon: "✅"
+    logo: ""
+
+# Schema Information
+schema:
+  models_count: 9
+  relationships_count: 12
+
+# Demo Data
+data:
+  sample_projects: 8
+  sample_tasks: 60
+  sample_categories: 10
+  sample_users: 12
+  sample_comments: 45
+  sample_assignments: 40
+
+# Project Metadata
+metadata:
+  category: "Productivity & Task Management"
+  difficulty: "Intermediate"
+  tags:
+    - "task-management"
+    - "productivity"
+    - "project-organization"
+    - "team-collaboration"
+    - "assignment-tracking"
+    - "priority-management"
+    - "workflow"
+  keywords:
+    - "task management system"
+    - "todo application"
+    - "project organization"
+    - "task assignment"
+    - "priority tracking"
+    - "team productivity"
+    - "workflow management"
+    - "task collaboration"
+  use_cases:
+    - "Team task management"
+    - "Personal productivity system"
+    - "Project workflow management"
+    - "Agile task tracking"
+    - "Small business organization"
+    - "Freelancer project management"
+  key_features:
+    - "Project-based task organization"
+    - "Task assignment system"
+    - "Priority levels"
+    - "Status tracking"
+    - "Team collaboration"
+    - "Comment system"
+    - "Category organization"
+    - "Due date management"

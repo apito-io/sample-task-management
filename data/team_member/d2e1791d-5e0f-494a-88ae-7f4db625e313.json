@@ -1,0 +1,11 @@
+{
+  "_id": "d2e1791d-5e0f-494a-88ae-7f4db625e313",
+  "avatar": "https://images.unsplash.com/photo-1500000646184?w=800",
+  "email": "test@example.com",
+  "first_name": "Sample first_name for team_member",
+  "hourly_rate": 193.69895808983685,
+  "is_active": false,
+  "last_name": "Sample last_name for team_member",
+  "role": "Designer",
+  "skills": "Node.js"
+}

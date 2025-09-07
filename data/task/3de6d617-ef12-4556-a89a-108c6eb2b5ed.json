@@ -1,0 +1,27 @@
+{
+  "_id": "3de6d617-ef12-4556-a89a-108c6eb2b5ed",
+  "actual_hours": 878.6926752662587,
+  "assigned_to": "Sample assigned_to for task",
+  "attachments": "https://images.unsplash.com/photo-1500000043701?w=800",
+  "checklist": [
+    {
+      "_id": "Sample _id for array",
+      "assigned_to": "Sample assigned_to for array",
+      "completed": true,
+      "item": "Sample item for array"
+    },
+    {
+      "_id": "Sample _id for array",
+      "assigned_to": "Sample assigned_to for array",
+      "completed": true,
+      "item": "Sample item for array"
+    }
+  ],
+  "description": "This is sample multiline content.",
+  "due_date": "2025-06-19",
+  "estimated_hours": 298.03886126845873,
+  "priority": "Critical",
+  "status": "Review",
+  "tags": "Bug",
+  "title": "Complete task Guide"
+}

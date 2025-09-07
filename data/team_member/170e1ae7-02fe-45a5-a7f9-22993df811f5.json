@@ -1,0 +1,11 @@
+{
+  "_id": "170e1ae7-02fe-45a5-a7f9-22993df811f5",
+  "avatar": "https://images.unsplash.com/photo-1500000774807?w=800",
+  "email": "user@sample.net",
+  "first_name": "Sample first_name for team_member",
+  "hourly_rate": 564.8336037654337,
+  "is_active": false,
+  "last_name": "Sample last_name for team_member",
+  "role": "QA Tester",
+  "skills": "Node.js"
+}

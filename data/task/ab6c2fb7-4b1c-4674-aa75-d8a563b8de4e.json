@@ -1,0 +1,21 @@
+{
+  "_id": "ab6c2fb7-4b1c-4674-aa75-d8a563b8de4e",
+  "actual_hours": 882.4322929379518,
+  "assigned_to": "Sample assigned_to for task",
+  "attachments": "https://images.unsplash.com/photo-1500000262848?w=800",
+  "checklist": [
+    {
+      "_id": "Sample _id for array",
+      "assigned_to": "Sample assigned_to for array",
+      "completed": false,
+      "item": "Sample item for array"
+    }
+  ],
+  "description": "This is sample multiline content.",
+  "due_date": "2024-07-12",
+  "estimated_hours": 946.9126249435537,
+  "priority": "Critical",
+  "status": "To Do",
+  "tags": "Feature",
+  "title": "Complete task Guide"
+}

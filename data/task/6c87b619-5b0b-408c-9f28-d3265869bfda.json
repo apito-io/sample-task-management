@@ -1,0 +1,21 @@
+{
+  "_id": "6c87b619-5b0b-408c-9f28-d3265869bfda",
+  "actual_hours": 350.2664397495129,
+  "assigned_to": "Sample assigned_to for task",
+  "attachments": "https://images.unsplash.com/photo-1500000644519?w=800",
+  "checklist": [
+    {
+      "_id": "Sample _id for array",
+      "assigned_to": "Sample assigned_to for array",
+      "completed": false,
+      "item": "Sample item for array"
+    }
+  ],
+  "description": "This is sample multiline content.",
+  "due_date": "2025-09-02",
+  "estimated_hours": 319.337520043609,
+  "priority": "High",
+  "status": "Done",
+  "tags": "Feature",
+  "title": "Amazing task"
+}

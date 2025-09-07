@@ -1,0 +1,33 @@
+{
+  "_id": "1924cdc3-7b51-4d3f-9071-935ea29e1f20",
+  "actual_hours": 278.24634724673126,
+  "assigned_to": "Sample assigned_to for task",
+  "attachments": "https://images.unsplash.com/photo-1500000911814?w=800",
+  "checklist": [
+    {
+      "_id": "Sample _id for array",
+      "assigned_to": "Sample assigned_to for array",
+      "completed": false,
+      "item": "Sample item for array"
+    },
+    {
+      "_id": "Sample _id for array",
+      "assigned_to": "Sample assigned_to for array",
+      "completed": true,
+      "item": "Sample item for array"
+    },
+    {
+      "_id": "Sample _id for array",
+      "assigned_to": "Sample assigned_to for array",
+      "completed": true,
+      "item": "Sample item for array"
+    }
+  ],
+  "description": "This is sample multiline content.",
+  "due_date": "2025-01-01",
+  "estimated_hours": 671.7188198823286,
+  "priority": "Medium",
+  "status": "Review",
+  "tags": "Research",
+  "title": "Sample task"
+}

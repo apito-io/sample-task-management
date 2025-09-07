@@ -1,0 +1,11 @@
+{
+  "_id": "e3945c59-2f6b-427e-b5d2-9b63ceb875eb",
+  "avatar": "https://images.unsplash.com/photo-1500000780087?w=800",
+  "email": "test@example.com",
+  "first_name": "Sample first_name for team_member",
+  "hourly_rate": 843.7046196865414,
+  "is_active": false,
+  "last_name": "Sample last_name for team_member",
+  "role": "Project Manager",
+  "skills": "DevOps"
+}

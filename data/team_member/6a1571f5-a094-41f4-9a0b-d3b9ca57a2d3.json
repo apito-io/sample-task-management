@@ -1,0 +1,11 @@
+{
+  "_id": "6a1571f5-a094-41f4-9a0b-d3b9ca57a2d3",
+  "avatar": "https://images.unsplash.com/photo-1500000879505?w=800",
+  "email": "user@sample.net",
+  "first_name": "Sample first_name for team_member",
+  "hourly_rate": 568.4103749783377,
+  "is_active": false,
+  "last_name": "Sample last_name for team_member",
+  "role": "Designer",
+  "skills": "Testing"
+}

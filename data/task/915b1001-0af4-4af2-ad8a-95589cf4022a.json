@@ -1,0 +1,21 @@
+{
+  "_id": "915b1001-0af4-4af2-ad8a-95589cf4022a",
+  "actual_hours": 472.90365520365185,
+  "assigned_to": "Sample assigned_to for task",
+  "attachments": "https://images.unsplash.com/photo-1500000928965?w=800",
+  "checklist": [
+    {
+      "_id": "Sample _id for array",
+      "assigned_to": "Sample assigned_to for array",
+      "completed": true,
+      "item": "Sample item for array"
+    }
+  ],
+  "description": "This is sample multiline content.",
+  "due_date": "2024-03-30",
+  "estimated_hours": 380.7267463133359,
+  "priority": "Medium",
+  "status": "Done",
+  "tags": "Research",
+  "title": "Complete task Guide"
+}

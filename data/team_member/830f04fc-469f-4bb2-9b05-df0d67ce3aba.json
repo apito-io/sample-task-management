@@ -1,0 +1,11 @@
+{
+  "_id": "830f04fc-469f-4bb2-9b05-df0d67ce3aba",
+  "avatar": "https://images.unsplash.com/photo-1500000578345?w=800",
+  "email": "test@example.com",
+  "first_name": "Sample first_name for team_member",
+  "hourly_rate": 736.8587002830833,
+  "is_active": false,
+  "last_name": "Sample last_name for team_member",
+  "role": "Business Analyst",
+  "skills": "DevOps"
+}

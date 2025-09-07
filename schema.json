@@ -1,0 +1,561 @@
+{
+  "id": "task_management",
+  "name": "Task Management",
+  "description": "Project and task tracking with team collaboration features",
+  "schema": {
+    "models": [
+      {
+        "name": "project",
+        "fields": [
+          {
+            "identifier": "name",
+            "input_type": "string",
+            "field_type": "text",
+            "validation": { "required": true },
+            "serial": 1,
+            "label": "Project Name"
+          },
+          {
+            "identifier": "description",
+            "input_type": "string",
+            "field_type": "multiline",
+            "validation": {},
+            "serial": 2,
+            "label": "Description"
+          },
+          {
+            "identifier": "status",
+            "input_type": "string",
+            "field_type": "list",
+            "validation": {
+              "fixed_list_elements": [
+                "Planning",
+                "Active",
+                "On Hold",
+                "Completed",
+                "Cancelled"
+              ]
+            },
+            "serial": 3,
+            "label": "Status"
+          },
+          {
+            "identifier": "priority",
+            "input_type": "string",
+            "field_type": "list",
+            "validation": {
+              "fixed_list_elements": ["Low", "Medium", "High", "Critical"]
+            },
+            "serial": 4,
+            "label": "Priority"
+          },
+          {
+            "identifier": "start_date",
+            "input_type": "string",
+            "field_type": "date",
+            "validation": {},
+            "serial": 5,
+            "label": "Start Date"
+          },
+          {
+            "identifier": "due_date",
+            "input_type": "string",
+            "field_type": "date",
+            "validation": {},
+            "serial": 6,
+            "label": "Due Date"
+          },
+          {
+            "identifier": "budget",
+            "input_type": "double",
+            "field_type": "number",
+            "validation": {},
+            "serial": 7,
+            "label": "Budget"
+          },
+          {
+            "identifier": "progress",
+            "input_type": "int",
+            "field_type": "number",
+            "validation": {},
+            "serial": 8,
+            "label": "Progress (%)"
+          }
+        ],
+        "connections": [
+          {
+            "model": "task",
+            "relation": "has_many",
+            "type": "backward",
+            "known_as": "assignedProject"
+          },
+          {
+            "model": "team_member",
+            "relation": "has_many",
+            "type": "backward",
+            "known_as": "projectMembers"
+          }
+        ],
+        "has_connections": true
+      },
+      {
+        "name": "task",
+        "fields": [
+          {
+            "identifier": "title",
+            "input_type": "string",
+            "field_type": "text",
+            "validation": { "required": true },
+            "serial": 1,
+            "label": "Task Title"
+          },
+          {
+            "identifier": "description",
+            "input_type": "string",
+            "field_type": "multiline",
+            "validation": {},
+            "serial": 2,
+            "label": "Description"
+          },
+          {
+            "identifier": "status",
+            "input_type": "string",
+            "field_type": "list",
+            "validation": {
+              "fixed_list_elements": [
+                "To Do",
+                "In Progress",
+                "Review",
+                "Done",
+                "Blocked"
+              ]
+            },
+            "serial": 3,
+            "label": "Status"
+          },
+          {
+            "identifier": "priority",
+            "input_type": "string",
+            "field_type": "list",
+            "validation": {
+              "fixed_list_elements": ["Low", "Medium", "High", "Critical"]
+            },
+            "serial": 4,
+            "label": "Priority"
+          },
+          {
+            "identifier": "assigned_to",
+            "input_type": "string",
+            "field_type": "text",
+            "validation": {},
+            "serial": 5,
+            "label": "Assigned To"
+          },
+          {
+            "identifier": "due_date",
+            "input_type": "string",
+            "field_type": "date",
+            "validation": {},
+            "serial": 6,
+            "label": "Due Date"
+          },
+          {
+            "identifier": "estimated_hours",
+            "input_type": "double",
+            "field_type": "number",
+            "validation": {},
+            "serial": 7,
+            "label": "Estimated Hours"
+          },
+          {
+            "identifier": "actual_hours",
+            "input_type": "double",
+            "field_type": "number",
+            "validation": {},
+            "serial": 8,
+            "label": "Actual Hours"
+          },
+          {
+            "identifier": "tags",
+            "input_type": "string",
+            "field_type": "list",
+            "validation": {
+              "fixed_list_elements": [
+                "Bug",
+                "Feature",
+                "Documentation",
+                "Testing",
+                "Research"
+              ],
+              "is_multi_choice": true
+            },
+            "serial": 9,
+            "label": "Tags"
+          },
+          {
+            "identifier": "attachments",
+            "input_type": "string",
+            "field_type": "media",
+            "validation": { "is_gallery": true },
+            "serial": 10,
+            "label": "Attachments"
+          },
+          {
+            "identifier": "checklist",
+            "input_type": "repeated",
+            "field_type": "repeated",
+            "sub_field_info": [
+              {
+                "identifier": "_id",
+                "input_type": "string",
+                "field_type": "text",
+                "validation": { "hide": true, "unique": true },
+                "serial": 1,
+                "label": "ID",
+                "system_generated": true,
+                "parent_field": "checklist"
+              },
+              {
+                "identifier": "item",
+                "input_type": "string",
+                "field_type": "text",
+                "validation": { "required": true },
+                "serial": 2,
+                "label": "Checklist Item",
+                "parent_field": "checklist"
+              },
+              {
+                "identifier": "completed",
+                "input_type": "bool",
+                "field_type": "boolean",
+                "validation": {},
+                "serial": 3,
+                "label": "Completed",
+                "parent_field": "checklist"
+              },
+              {
+                "identifier": "assigned_to",
+                "input_type": "string",
+                "field_type": "text",
+                "validation": {},
+                "serial": 4,
+                "label": "Assigned To",
+                "parent_field": "checklist"
+              }
+            ],
+            "validation": {},
+            "serial": 11,
+            "label": "Checklist"
+          }
+        ],
+        "connections": [
+          {
+            "model": "project",
+            "relation": "has_one",
+            "type": "forward",
+            "known_as": "assignedProject"
+          },
+          {
+            "model": "comment",
+            "relation": "has_many",
+            "type": "backward"
+          }
+        ],
+        "has_connections": true
+      },
+      {
+        "name": "team_member",
+        "fields": [
+          {
+            "identifier": "first_name",
+            "input_type": "string",
+            "field_type": "text",
+            "validation": { "required": true },
+            "serial": 1,
+            "label": "First Name"
+          },
+          {
+            "identifier": "last_name",
+            "input_type": "string",
+            "field_type": "text",
+            "validation": { "required": true },
+            "serial": 2,
+            "label": "Last Name"
+          },
+          {
+            "identifier": "email",
+            "input_type": "string",
+            "field_type": "text",
+            "validation": { "required": true, "unique": true },
+            "serial": 3,
+            "label": "Email"
+          },
+          {
+            "identifier": "role",
+            "input_type": "string",
+            "field_type": "list",
+            "validation": {
+              "fixed_list_elements": [
+                "Project Manager",
+                "Developer",
+                "Designer",
+                "QA Tester",
+                "Business Analyst"
+              ]
+            },
+            "serial": 4,
+            "label": "Role"
+          },
+          {
+            "identifier": "hourly_rate",
+            "input_type": "double",
+            "field_type": "number",
+            "validation": {},
+            "serial": 5,
+            "label": "Hourly Rate"
+          },
+          {
+            "identifier": "skills",
+            "input_type": "string",
+            "field_type": "list",
+            "validation": {
+              "fixed_list_elements": [
+                "JavaScript",
+                "Python",
+                "React",
+                "Node.js",
+                "UI/UX",
+                "Testing",
+                "DevOps"
+              ],
+              "is_multi_choice": true
+            },
+            "serial": 6,
+            "label": "Skills"
+          },
+          {
+            "identifier": "avatar",
+            "input_type": "string",
+            "field_type": "media",
+            "sub_field_info": [
+              {
+                "identifier": "url",
+                "input_type": "string",
+                "field_type": "text",
+                "parent_field": "avatar"
+              },
+              {
+                "identifier": "id",
+                "input_type": "string",
+                "field_type": "text",
+                "parent_field": "avatar"
+              },
+              {
+                "identifier": "file_name",
+                "input_type": "string",
+                "field_type": "text",
+                "parent_field": "avatar"
+              }
+            ],
+            "validation": {},
+            "serial": 7,
+            "label": "Avatar"
+          },
+          {
+            "identifier": "is_active",
+            "input_type": "bool",
+            "field_type": "boolean",
+            "validation": {},
+            "serial": 8,
+            "label": "Active"
+          }
+        ],
+        "connections": [
+          {
+            "model": "project",
+            "relation": "has_one",
+            "type": "forward",
+            "known_as": "projectMembers"
+          }
+        ],
+        "has_connections": true
+      },
+      {
+        "name": "comment",
+        "fields": [
+          {
+            "identifier": "content",
+            "input_type": "string",
+            "field_type": "multiline",
+            "validation": { "required": true },
+            "serial": 1,
+            "label": "Comment"
+          },
+          {
+            "identifier": "author",
+            "input_type": "string",
+            "field_type": "text",
+            "validation": { "required": true },
+            "serial": 2,
+            "label": "Author"
+          },
+          {
+            "identifier": "created_at",
+            "input_type": "string",
+            "field_type": "date",
+            "validation": { "required": true },
+            "serial": 3,
+            "label": "Created Date"
+          },
+          {
+            "identifier": "is_internal",
+            "input_type": "bool",
+            "field_type": "boolean",
+            "validation": {},
+            "serial": 4,
+            "label": "Internal Comment"
+          },
+          {
+            "identifier": "mentions",
+            "input_type": "repeated",
+            "field_type": "repeated",
+            "sub_field_info": [
+              {
+                "identifier": "_id",
+                "input_type": "string",
+                "field_type": "text",
+                "validation": { "hide": true, "unique": true },
+                "serial": 1,
+                "label": "ID",
+                "system_generated": true,
+                "parent_field": "mentions"
+              },
+              {
+                "identifier": "user_email",
+                "input_type": "string",
+                "field_type": "text",
+                "validation": { "required": true },
+                "serial": 2,
+                "label": "User Email",
+                "parent_field": "mentions"
+              },
+              {
+                "identifier": "notified",
+                "input_type": "bool",
+                "field_type": "boolean",
+                "validation": {},
+                "serial": 3,
+                "label": "Notified",
+                "parent_field": "mentions"
+              }
+            ],
+            "validation": {},
+            "serial": 5,
+            "label": "Mentions"
+          }
+        ],
+        "connections": [
+          {
+            "model": "task",
+            "relation": "has_one",
+            "type": "forward"
+          }
+        ],
+        "has_connections": true
+      }
+    ]
+  },
+  "settings": {
+    "locals": ["en"]
+  },
+  "roles": {
+    "admin": {
+      "system_generated": true,
+      "is_admin": true
+    },
+    "project_manager": {
+      "api_permissions": {
+        "project": {
+          "read": "all",
+          "create": "all",
+          "update": "all",
+          "delete": "all"
+        },
+        "task": {
+          "read": "all",
+          "create": "all",
+          "update": "all",
+          "delete": "all"
+        },
+        "team_member": {
+          "read": "all",
+          "create": "all",
+          "update": "all",
+          "delete": "all"
+        },
+        "comment": {
+          "read": "all",
+          "create": "all",
+          "update": "all",
+          "delete": "all"
+        }
+      }
+    },
+    "developer": {
+      "api_permissions": {
+        "project": {
+          "read": "all",
+          "create": "none",
+          "update": "none",
+          "delete": "none"
+        },
+        "task": {
+          "read": "all",
+          "create": "all",
+          "update": "all",
+          "delete": "none"
+        },
+        "team_member": {
+          "read": "all",
+          "create": "none",
+          "update": "own",
+          "delete": "none"
+        },
+        "comment": {
+          "read": "all",
+          "create": "all",
+          "update": "own",
+          "delete": "own"
+        }
+      }
+    },
+    "viewer": {
+      "api_permissions": {
+        "project": {
+          "read": "all",
+          "create": "none",
+          "update": "none",
+          "delete": "none"
+        },
+        "task": {
+          "read": "all",
+          "create": "none",
+          "update": "none",
+          "delete": "none"
+        },
+        "team_member": {
+          "read": "all",
+          "create": "none",
+          "update": "none",
+          "delete": "none"
+        },
+        "comment": {
+          "read": "all",
+          "create": "all",
+          "update": "none",
+          "delete": "none"
+        }
+      }
+    }
+  }
+}

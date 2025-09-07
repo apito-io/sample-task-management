@@ -1,0 +1,14 @@
+{
+  "_id": "cf5d8f02-9773-4194-8a89-1230d4a413ac",
+  "author": "Sample author for comment",
+  "content": "This is sample multiline content.",
+  "created_at": "2025-02-13",
+  "is_internal": true,
+  "mentions": [
+    {
+      "_id": "Sample _id for array",
+      "notified": true,
+      "user_email": "Sample user_email for array"
+    }
+  ]
+}

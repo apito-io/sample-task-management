@@ -1,0 +1,11 @@
+{
+  "_id": "c206ddb2-0857-47c3-a792-e695ac846af1",
+  "avatar": "https://images.unsplash.com/photo-1500000900233?w=800",
+  "email": "user@sample.net",
+  "first_name": "Sample first_name for team_member",
+  "hourly_rate": 287.0303637251741,
+  "is_active": true,
+  "last_name": "Sample last_name for team_member",
+  "role": "Designer",
+  "skills": "DevOps"
+}

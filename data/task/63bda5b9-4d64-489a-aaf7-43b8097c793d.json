@@ -1,0 +1,33 @@
+{
+  "_id": "63bda5b9-4d64-489a-aaf7-43b8097c793d",
+  "actual_hours": 540.1142168762343,
+  "assigned_to": "Sample assigned_to for task",
+  "attachments": "https://images.unsplash.com/photo-1500000677626?w=800",
+  "checklist": [
+    {
+      "_id": "Sample _id for array",
+      "assigned_to": "Sample assigned_to for array",
+      "completed": false,
+      "item": "Sample item for array"
+    },
+    {
+      "_id": "Sample _id for array",
+      "assigned_to": "Sample assigned_to for array",
+      "completed": false,
+      "item": "Sample item for array"
+    },
+    {
+      "_id": "Sample _id for array",
+      "assigned_to": "Sample assigned_to for array",
+      "completed": true,
+      "item": "Sample item for array"
+    }
+  ],
+  "description": "This is sample multiline content.",
+  "due_date": "2025-06-09",
+  "estimated_hours": 287.589026390114,
+  "priority": "Critical",
+  "status": "In Progress",
+  "tags": "Testing",
+  "title": "Complete task Guide"
+}

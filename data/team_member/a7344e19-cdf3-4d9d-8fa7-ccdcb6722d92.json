@@ -1,0 +1,11 @@
+{
+  "_id": "a7344e19-cdf3-4d9d-8fa7-ccdcb6722d92",
+  "avatar": "https://images.unsplash.com/photo-1500000565749?w=800",
+  "email": "user@sample.net",
+  "first_name": "Sample first_name for team_member",
+  "hourly_rate": 180.51239877595611,
+  "is_active": true,
+  "last_name": "Sample last_name for team_member",
+  "role": "Project Manager",
+  "skills": "React"
+}
