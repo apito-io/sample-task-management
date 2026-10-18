@@ -1,6 +1,6 @@
 # Task Management System - Apito Engine Template
 
-✅ **A comprehensive task management system with project organization, team collaboration, and comment tracking**
+✅ **A task management system with project organization, team collaboration, and comment tracking**
 
 [![Apito Engine](https://img.shields.io/badge/Apito-Engine-blue?style=flat&logo=graphql)](https://apito.io)
 [![Project Type](https://img.shields.io/badge/Project%20Type-General-green?style=flat)](#project-type)
